@@ -10,3 +10,4 @@ public/assets/payinstacard/redesign-overview.gif
 
 # local editor / agent settings
 .claude/
+.vercel
