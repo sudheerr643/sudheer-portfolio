@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+.vercel
+next-env.d.ts
+*.tsbuildinfo
+.env*
+# source GIFs are replaced by MP4s
+public/assets/payinstacard/redesign-overview.gif
+
+# local editor / agent settings
+.claude/
