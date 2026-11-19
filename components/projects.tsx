@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { Letters, StatusPill, Tile } from "./ui";
+import { Phone } from "./splitpay/Phone";
+import { Screen } from "./splitpay/screens";
 
 type CardProps = {
   title: string;
@@ -93,6 +95,26 @@ export function EjoyMedia() {
         sizes="(min-width: 1024px) 33vw, 100vw"
         className="origin-[100%_42%] scale-[1.5] object-cover object-right"
       />
+    </div>
+  );
+}
+
+/** Split Pay concept: two phones on a soft brand gradient. */
+export function SplitPayMedia() {
+  return (
+    <div className="relative h-full w-full overflow-hidden bg-[radial-gradient(120%_90%_at_50%_0%,#FFE3E8_0%,#FFF5F6_45%,#FFFFFF_100%)]">
+      <div className="absolute inset-0 flex items-center justify-center gap-5 pt-4">
+        <div className="mt-16 -rotate-[4deg]">
+          <Phone width={176}>
+            <Screen id="f1-invite" />
+          </Phone>
+        </div>
+        <div className="rotate-[3deg]">
+          <Phone width={200}>
+            <Screen id="s3-status" />
+          </Phone>
+        </div>
+      </div>
     </div>
   );
 }

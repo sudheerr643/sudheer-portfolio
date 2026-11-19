@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { AboutSheet } from "@/components/AboutSheet";
-import { EjoyMedia, PayinstacardMedia, ProjectCard, WritingMedia } from "@/components/projects";
+import { EjoyMedia, PayinstacardMedia, ProjectCard, SplitPayMedia } from "@/components/projects";
 import { Hero } from "@/components/Hero";
 import { InterestsCard } from "@/components/InterestsCard";
 import { LocationTile } from "@/components/LocationTile";
@@ -111,11 +111,12 @@ export default function Home() {
             <ProjectCard
               i={5}
               className="h-[420px] lg:h-auto lg:min-h-[440px] lg:flex-1"
-              status="In Progress"
+              href="/split-pay"
+              status="Concept"
               tone="blue"
-              title="More case studies"
-              subtitle="Currently writing — check back soon"
-              media={<WritingMedia />}
+              title="Split Pay for group bookings"
+              subtitle="Book together, pay separately — a feature concept for movie ticketing"
+              media={<SplitPayMedia />}
             />
           </section>
 

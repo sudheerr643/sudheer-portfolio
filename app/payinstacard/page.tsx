@@ -282,7 +282,7 @@ export default function Payinstacard() {
           </Link>
         </Card>
 
-        <div className="tile p-4 sm:px-6">
+        <div className="tile relative h-[96px] overflow-hidden">
           <ThemeToggle />
         </div>
         <p className="py-6 text-center text-xs text-muted">© {new Date().getFullYear()} {profile.fullName}.</p>

@@ -3,6 +3,10 @@ import "@fontsource/open-runde/latin-400.css";
 import "@fontsource/open-runde/latin-500.css";
 import "@fontsource/open-runde/latin-600.css";
 import "@fontsource/open-runde/latin-700.css";
+// Roboto is only used inside the Split Pay concept screens (downloaded on first use)
+import "@fontsource/roboto/latin-400.css";
+import "@fontsource/roboto/latin-500.css";
+import "@fontsource/roboto/latin-700.css";
 import "./globals.css";
 import { CursorFollower } from "@/components/CursorFollower";
 
