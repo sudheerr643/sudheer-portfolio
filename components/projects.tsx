@@ -69,18 +69,17 @@ export function ProjectCard({ title, subtitle, status, tone = "green", href, ext
 export function PayinstacardMedia() {
   return (
     <div className="relative h-full w-full overflow-hidden bg-black">
-    <video
-      className="h-full w-full origin-[97%_50%] scale-[1.25] object-cover object-right"
-      src="/assets/payinstacard-thumb.mp4"
-      poster="/assets/payinstacard-poster.jpg"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-    />
-    {/* hides the thumbnail's own title text on the left */}
-    <div className="absolute inset-y-0 left-0 w-[42%] bg-gradient-to-r from-black from-45% to-transparent" />
+      {/* cropped to just the phones, so no banner lettering can show */}
+      <video
+        className="h-full w-full object-cover object-center"
+        src="/assets/payinstacard-phones.mp4"
+        poster="/assets/payinstacard-phones-poster.jpg"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
     </div>
   );
 }

@@ -90,17 +90,18 @@ export default function Payinstacard() {
             </div>
             {/* media stays inside its own column and never overlaps the text */}
             <div className="relative h-[360px] overflow-hidden md:h-auto md:min-h-[520px]">
+              {/* cropped to just the phones, so no banner lettering can show at any width */}
               <video
-                className="absolute inset-0 h-full w-full object-cover object-right"
-                src="/assets/payinstacard-thumb.mp4"
-                poster="/assets/payinstacard-poster.jpg"
+                className="absolute inset-0 h-full w-full object-cover object-center"
+                src="/assets/payinstacard-phones.mp4"
+                poster="/assets/payinstacard-phones-poster.jpg"
                 autoPlay
                 muted
                 loop
                 playsInline
               />
-              {/* blend the left edge into the card and hide the thumbnail's own title lettering */}
-              <div className="pointer-events-none absolute inset-y-0 left-0 w-[48%] bg-gradient-to-r from-[#0b0b0b] from-50% to-transparent" />
+              {/* soft blend into the card on the left */}
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-[12%] bg-gradient-to-r from-[#0b0b0b] to-transparent" />
             </div>
           </div>
         </section>
