@@ -62,8 +62,8 @@ export default function Payinstacard() {
       <div className="mt-4 space-y-4">
         {/* Hero */}
         <section className="tile rise relative overflow-hidden !bg-[#0b0b0b] text-white" style={{ ["--i" as string]: 1 }}>
-          <div className="grid items-center md:grid-cols-[1.1fr_1fr]">
-            <div className="p-7 sm:p-10">
+          <div className="grid items-stretch md:grid-cols-[1.1fr_1fr]">
+            <div className="relative z-10 p-7 sm:p-10">
               <div className="flex flex-wrap gap-1.5">
                 {["UX Research", "Product Design", "FinTech", "Mobile App"].map((t) => (
                   <span key={t} className="rounded-full bg-white/10 px-2.5 py-1 text-[11px] font-medium text-white/80 ring-1 ring-white/10">
@@ -88,9 +88,10 @@ export default function Payinstacard() {
               </div>
               <p className="mt-2 text-sm text-white/60">desktop dependency</p>
             </div>
-            <div className="relative h-[340px] md:h-full md:min-h-[520px]">
+            {/* media stays inside its own column and never overlaps the text */}
+            <div className="relative h-[360px] overflow-hidden md:h-auto md:min-h-[520px]">
               <video
-                className="absolute inset-0 h-full w-full origin-right scale-[1.3] object-cover object-right"
+                className="absolute inset-0 h-full w-full object-cover object-right"
                 src="/assets/payinstacard-thumb.mp4"
                 poster="/assets/payinstacard-poster.jpg"
                 autoPlay
@@ -98,6 +99,8 @@ export default function Payinstacard() {
                 loop
                 playsInline
               />
+              {/* blend the left edge into the card and hide the thumbnail's own title lettering */}
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-[28%] bg-gradient-to-r from-[#0b0b0b] from-30% to-transparent" />
             </div>
           </div>
         </section>
@@ -190,8 +193,9 @@ export default function Payinstacard() {
         </Card>
 
         {/* Transformation */}
-        <section className="grid gap-4 md:grid-cols-[1fr_1fr_1.1fr]">
-          <Card>
+        <section className="grid gap-4 md:grid-cols-[1fr_minmax(0,340px)]">
+          <div className="grid gap-4">
+          <Card className="flex flex-col justify-center">
             <Eyebrow>Before</Eyebrow>
             <ul className="mt-3 space-y-2 text-[15px] text-muted">
               <li>Fragmented, form-heavy flow.</li>
@@ -199,7 +203,7 @@ export default function Payinstacard() {
               <li>Low clarity around payments.</li>
             </ul>
           </Card>
-          <Card>
+          <Card className="flex flex-col justify-center">
             <p className="text-[11px] font-semibold tracking-[0.14em] text-green-600 uppercase">After</p>
             <ul className="mt-3 space-y-2 text-[15px]">
               <li>Guided, linear experience.</li>
@@ -208,8 +212,10 @@ export default function Payinstacard() {
             </ul>
             <p className="mt-6 text-sm font-semibold text-accent">From friction → clarity</p>
           </Card>
-          <div className="tile relative min-h-[420px] overflow-hidden !bg-[#0b0b0b]">
-            <video className="absolute inset-0 h-full w-full object-cover" src="/assets/payinstacard/redesign-overview.mp4" autoPlay muted loop playsInline preload="metadata" />
+          </div>
+          {/* portrait recording (1080×1920): card matches 9:16 so nothing is cropped */}
+          <div className="tile relative mx-auto aspect-[9/16] w-full max-w-[420px] self-start overflow-hidden !bg-[#0b0b0b]">
+            <video className="absolute inset-0 h-full w-full object-contain" src="/assets/payinstacard/redesign-overview.mp4" autoPlay muted loop playsInline preload="metadata" />
           </div>
         </section>
 
