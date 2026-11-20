@@ -68,10 +68,10 @@ export function ProjectCard({ title, subtitle, status, tone = "green", href, ext
 
 export function PayinstacardMedia() {
   return (
-    <div className="relative h-full w-full overflow-hidden bg-black">
-      {/* cropped to just the phones, so no banner lettering can show */}
+    <div className="relative h-full w-full overflow-hidden bg-[#050505]">
+      {/* portrait clip of just the phones: shown whole ("contain") so the card never crops them */}
       <video
-        className="h-full w-full object-cover object-center"
+        className="absolute inset-0 h-full w-full object-contain object-center px-4 pt-16 pb-28"
         src="/assets/payinstacard-phones.mp4"
         poster="/assets/payinstacard-phones-poster.jpg"
         autoPlay
@@ -80,6 +80,8 @@ export function PayinstacardMedia() {
         playsInline
         preload="metadata"
       />
+      {/* blend the clip's edges into the card */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_75%_at_50%_45%,transparent_60%,#050505_95%)]" />
     </div>
   );
 }

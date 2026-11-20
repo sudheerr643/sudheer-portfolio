@@ -92,7 +92,7 @@ export default function Payinstacard() {
             <div className="relative h-[360px] overflow-hidden md:h-auto md:min-h-[520px]">
               {/* cropped to just the phones, so no banner lettering can show at any width */}
               <video
-                className="absolute inset-0 h-full w-full object-cover object-center"
+                className="absolute inset-0 h-full w-full object-contain object-center p-6 md:p-8"
                 src="/assets/payinstacard-phones.mp4"
                 poster="/assets/payinstacard-phones-poster.jpg"
                 autoPlay
