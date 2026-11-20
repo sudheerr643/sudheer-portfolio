@@ -100,7 +100,7 @@ export default function Payinstacard() {
                 playsInline
               />
               {/* blend the left edge into the card and hide the thumbnail's own title lettering */}
-              <div className="pointer-events-none absolute inset-y-0 left-0 w-[28%] bg-gradient-to-r from-[#0b0b0b] from-30% to-transparent" />
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-[48%] bg-gradient-to-r from-[#0b0b0b] from-50% to-transparent" />
             </div>
           </div>
         </section>
