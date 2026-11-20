@@ -45,7 +45,7 @@ export function InterestsCard() {
               <motion.button
                 key={interests[idx].label}
                 type="button"
-                aria-label={top ? `${interests[idx].label} — show next interest` : undefined}
+                aria-label={top ? `${interests[idx].label}: show next interest` : undefined}
                 tabIndex={top ? 0 : -1}
                 className={`absolute top-1/2 left-1/2 aspect-[3/4] h-[70%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl bg-card shadow-[0_10px_24px_-10px_rgba(0,0,0,.5)] ring-[3px] ring-white outline-none focus-visible:ring-orange dark:ring-[#2a2a2a] ${
                   top ? "cursor-grab active:cursor-grabbing" : "pointer-events-none"

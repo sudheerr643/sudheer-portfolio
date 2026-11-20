@@ -10,9 +10,9 @@ import { CopyEmail, ThemeToggle } from "@/components/widgets";
 import { profile } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Split Pay — group movie bookings · Sudheer",
+  title: "Split Pay: group movie bookings · Sudheer",
   description:
-    "A product design concept: let a group lock seats together and each friend pay for their own seat from a link — no chasing money afterwards. Unofficial concept for BookMyShow.",
+    "A product design concept: let a group lock seats together and each friend pay for their own seat from a link, with no chasing money afterwards. Unofficial concept for BookMyShow.",
 };
 
 /* ---------- small building blocks ---------- */
@@ -58,14 +58,14 @@ const stats = [
   {
     value: "21.6 bn",
     label: "UPI payments in a single month (December 2025)",
-    context: "A record month on NPCI data. Paying a friend's share instantly is now a habit, not a hurdle — the rail Split Pay is built on.",
+    context: "A record month on NPCI data. Paying a friend's share instantly is now a habit, not a hurdle, and it's the rail Split Pay is built on.",
     source: "NPCI data via Entrackr",
     href: "https://entrackr.com/news/upi-records-highest-ever-monthly-transactions-at-2163-bn-in-december-10963201",
   },
   {
     value: "1 in 5",
     label: "adults have paid more than their share because splitting felt awkward",
-    context: "A 2,000-person UK study (21%). Money between friends is socially loaded — the product should make asking unnecessary, not just easier.",
+    context: "A 2,000-person UK study (21%). Money between friends is socially loaded. The product should make asking unnecessary, not just easier.",
     source: "Global Banking & Finance Review",
     href: "https://www.globalbankingandfinance.com/we-lose-an-average-of-2-6-billion-per-year-lending-money-to-friends-and-colleagues/",
   },
@@ -81,7 +81,7 @@ const competitors = [
   {
     name: "Paytm Split Bills",
     href: "https://paytm.com/blog/payments/movie-nights-trips-more-split-bills-using-paytm/",
-    how: "Track and split shared expenses equally or by custom amounts — Paytm even lists movie nights as a use case.",
+    how: "Track and split shared expenses equally or by custom amounts. Paytm even lists movie nights as a use case.",
     lesson: "Demand for splitting movie costs is real, but it happens outside the booking, with no link to seats.",
   },
   {
@@ -190,7 +190,7 @@ export default function SplitPayCaseStudy() {
                 <span className="text-muted">Book together. Pay separately.</span>
               </h1>
               <p className="mt-5 max-w-md text-[16px] leading-relaxed text-muted">
-                A feature concept for a movie-ticketing app: the group locks seats together and every friend pays for their own seat from a link — so nobody fronts the full amount or chases money afterwards.
+                A feature concept for a movie-ticketing app: the group locks seats together and every friend pays for their own seat from a link, so nobody fronts the full amount or chases money afterwards.
               </p>
               <p className="mt-6 inline-flex items-center gap-2 rounded-full bg-chip px-3 py-1.5 text-[12px] text-muted">
                 <span className="size-1.5 rounded-full bg-[#F84464]" /> Unofficial concept for BookMyShow · not affiliated
@@ -207,7 +207,7 @@ export default function SplitPayCaseStudy() {
         {/* ---------------- Overview ---------------- */}
         <section className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {[
-            ["Role", "Solo — research, UX, UI, prototype"],
+            ["Role", "Solo: research, UX, UI, prototype"],
             ["Timeline", "3 weeks (self-initiated)"],
             ["Platform", "iOS / Android app + mobile web"],
             ["Tools", "Figma, ProtoPie, code prototype"],
@@ -220,7 +220,7 @@ export default function SplitPayCaseStudy() {
         </section>
 
         {/* ---------------- Problem ---------------- */}
-        <Section eyebrow="The problem" title="One friend pays for everyone — then becomes the collections department">
+        <Section eyebrow="The problem" title="One friend pays for everyone, then becomes the collections department">
           <div className="grid gap-4 lg:grid-cols-[1.2fr_1fr]">
             <Card>
               <p className="text-[clamp(1.2rem,2.2vw,1.55rem)] leading-snug font-semibold tracking-tight">
@@ -229,7 +229,7 @@ export default function SplitPayCaseStudy() {
               <ul className="mt-5 space-y-3 text-[15px] leading-relaxed text-muted">
                 <li><b className="text-ink">The organiser carries the risk.</b> For six seats that&apos;s ₹2,100 up front, recovered over days through UPI requests and reminders.</li>
                 <li><b className="text-ink">Plans stay loose.</b> Friends have no stake until they&apos;ve paid, so “I&apos;m in” can quietly become “something came up”.</li>
-                <li><b className="text-ink">Waiting costs seats.</b> Organisers hold off booking until everyone confirms — and lose the good seats while they wait.</li>
+                <li><b className="text-ink">Waiting costs seats.</b> Organisers hold off booking until everyone confirms, and lose the good seats while they wait.</li>
               </ul>
             </Card>
             <div className="flex justify-center"><Shot id="c0-today" width={250} /></div>
@@ -262,10 +262,10 @@ export default function SplitPayCaseStudy() {
                 BookMyShow has tried group payments before. The payment rails just weren&apos;t ready.
               </p>
               <p className="mt-3 text-[15px] leading-relaxed text-muted">
-                Around 2016 BookMyShow shipped <b className="text-ink">Split Tickets</b>: the booking cost was shared across the group and each friend paid their part through BookMyShow&apos;s own wallet. In 2017 it added <b className="text-ink">Plan It</b>, a group-planning chat it said came from user requests. Then in early 2018 BookMyShow shut its wallet after RBI tightened rules for prepaid wallets — taking away the payment route Split Tickets depended on. I couldn&apos;t find any UPI-based replacement since.
+                Around 2016 BookMyShow shipped <b className="text-ink">Split Tickets</b>: the booking cost was shared across the group and each friend paid their part through BookMyShow&apos;s own wallet. In 2017 it added <b className="text-ink">Plan It</b>, a group-planning chat it said came from user requests. Then in early 2018 BookMyShow shut its wallet after RBI tightened rules for prepaid wallets, taking away the payment route Split Tickets depended on. I couldn&apos;t find any UPI-based replacement since.
               </p>
               <p className="mt-3 text-[15px] leading-relaxed">
-                <b>Why now:</b> the demand was proven in 2016–17. What was missing was a way for anyone to pay instantly without a closed wallet — which is exactly what UPI now is.
+                <b>Why now:</b> the demand was proven in 2016–17. What was missing was a way for anyone to pay instantly without a closed wallet, which is exactly what UPI now is.
               </p>
               <p className="mt-2 flex flex-wrap items-baseline gap-x-4 text-[12px] text-muted">
                 <span>Sources:</span>
@@ -318,12 +318,12 @@ export default function SplitPayCaseStudy() {
         <Card dark className="text-center">
           <Eyebrow light>How might we</Eyebrow>
           <p className="mx-auto mt-3 max-w-3xl text-[clamp(1.4rem,3vw,2.2rem)] leading-tight font-semibold tracking-[-0.025em]">
-            How might we let a group lock seats together and each pay for their own — without making booking slower for the person organising?
+            How might we let a group lock seats together and each pay for their own, without making booking slower for the person organising?
           </p>
         </Card>
 
         {/* ---------------- Business case ---------------- */}
-        <Section eyebrow="Why the business would build it" title="Group bookings are bigger baskets — and the riskiest checkouts">
+        <Section eyebrow="Why the business would build it" title="Group bookings are bigger baskets, and the riskiest checkouts">
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {[
               ["Group conversion", "Fewer abandoned 4–8 seat selections when the organiser only pays for one seat."],
@@ -344,7 +344,7 @@ export default function SplitPayCaseStudy() {
         <Section eyebrow="Design principles" title="Three rules every screen had to follow">
           <div className="grid gap-4 md:grid-cols-3">
             {[
-              ["Lock seats, not people", "Seats are guaranteed the moment the organiser commits — the group can't lose them while friends pay."],
+              ["Lock seats, not people", "Seats are guaranteed the moment the organiser commits, so the group can't lose them while friends pay."],
               ["Nobody waits on the slowest friend", "A visible hold timer and a recommended fallback mean the booking always resolves, on time."],
               ["Money is never ambiguous", "Everyone always knows who paid, what they paid, and what happens to their money if plans change."],
             ].map(([t, d]) => (
@@ -397,24 +397,24 @@ export default function SplitPayCaseStudy() {
               n="01"
               title="Offer split at seat selection, not after payment"
               chose="A “Split with friends” entry right under the seat map, alongside the normal pay button."
-              why="The group decision happens while picking seats. Offering split there means the organiser never fronts the money — after payment, it's just a reminder tool."
-              alt={["A “Share cost” button on the confirmation screen — too late, the organiser has already paid.", "A separate “Group booking” tab — hidden, and splits the booking journey in two."]}
+              why="The group decision happens while picking seats. Offering split there means the organiser never fronts the money. After payment, it's just a reminder tool."
+              alt={["A “Share cost” button on the confirmation screen: too late, the organiser has already paid.", "A separate “Group booking” tab: hidden, and splits the booking journey in two."]}
               shots={["s1-seats"]}
             />
             <Decision
               n="02"
-              title="The organiser pays only their own seat — the rest are held for 10 minutes"
+              title="The organiser pays only their own seat. The rest are held for 10 minutes"
               chose="Pay one share, lock every seat for the group, and show a hold timer to everyone."
-              why="It removes the financial risk without risking the seats. Ten minutes is long enough to pay from a chat link but short enough to keep inventory moving — and it's the first thing I'd A/B test in a pilot."
-              alt={["Organiser pays everything, friends reimburse in-app — keeps the risk on the organiser.", "No hold, everyone books individually — groups end up scattered across rows."]}
+              why="It removes the financial risk without risking the seats. Ten minutes is long enough to pay from a chat link but short enough to keep inventory moving, and it's the first thing I'd A/B test in a pilot."
+              alt={["Organiser pays everything, friends reimburse in-app: keeps the risk on the organiser.", "No hold, everyone books individually: groups end up scattered across rows."]}
               shots={["s2-split", "s3-status"]}
             />
             <Decision
               n="03"
-              title="Friends pay from a web link — no app, no account"
+              title="Friends pay from a web link: no app, no account"
               chose="The invite opens in the browser: who invited you, your seat, your share, time left, and one UPI button."
               why="Forcing an install at the moment of payment is the biggest drop-off risk. The ticket screen suggests the app afterwards, when it's useful (the M-ticket)."
-              alt={["Require the app to pay — adds install and sign-up before a ₹350 payment.", "Pay by UPI request from the organiser — no seat context, and nothing tells the app who paid."]}
+              alt={["Require the app to pay: adds install and sign-up before a ₹350 payment.", "Pay by UPI request from the organiser: no seat context, and nothing tells the app who paid."]}
               shots={["f1-invite", "f2-upi", "f3-ticket"]}
             />
           </div>
@@ -452,7 +452,7 @@ export default function SplitPayCaseStudy() {
         </Section>
 
         <Card dark className="mt-10 flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-xl text-xl font-semibold tracking-tight">The best group feature isn&apos;t splitting the bill — it&apos;s never having to ask for the money.</p>
+          <p className="max-w-xl text-xl font-semibold tracking-tight">The best group feature isn&apos;t splitting the bill. It&apos;s never having to ask for the money.</p>
           <Link href="/" className="inline-flex h-11 shrink-0 items-center gap-2 rounded-full bg-white px-5 text-sm font-medium text-black">
             More work <Icon.arrow className="size-4" />
           </Link>

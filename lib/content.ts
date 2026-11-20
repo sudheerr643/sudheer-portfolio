@@ -17,7 +17,7 @@ export const profile = {
   careerStart: "2023-02-01",
   timeZone: "Asia/Kolkata",
   timeZoneLabel: "IST • GMT+5:30",
-  bio: "I enjoy the craft of building things that feel right. I design intuitive digital products across web and mobile — from payments and fintech to CRM platforms and design systems — and I've shipped live products across fintech, sports, crypto and CRM, always putting the user first.",
+  bio: "I enjoy the craft of building things that feel right. I design intuitive digital products across web and mobile, from payments and fintech to CRM platforms and design systems, and I've shipped live products across fintech, sports, crypto and CRM, always putting the user first.",
   stats: [
     { value: "3+", label: "Years designing" },
     { value: "6+", label: "Products shipped" },
@@ -41,7 +41,7 @@ export const experience: Role[] = [
     title: "UX/UI Designer",
     start: "2024-11",
     summary:
-      "Designing for B2B and B2C brands — crafting websites, user interfaces, and social media creatives with a sharp focus on conversion optimization and user retention.",
+      "Designing for B2B and B2C brands, crafting websites, user interfaces, and social media creatives with a sharp focus on conversion optimization and user retention.",
     points: [
       "Designed multiple brand websites for B2B and B2C clients from brief to final handoff.",
       "Delivered visually compelling, intuitive UIs while maintaining a strong focus on conversion and retention metrics.",
@@ -55,7 +55,7 @@ export const experience: Role[] = [
     start: "2024-09",
     end: "2024-11",
     summary:
-      "Designed the full UI/UX for a CRM-style support ticketing web app — from information architecture through to a clean, scalable design handoff.",
+      "Designed the full UI/UX for a CRM-style support ticketing web app, from information architecture through to a clean, scalable design handoff.",
     points: [
       "Designed UI/UX for a CRM-style support ticketing app with SLA tracking and agent collaboration workflows.",
       "Prioritised seamless UI patterns that reduced cognitive load for support agents under time pressure.",
@@ -69,9 +69,9 @@ export const experience: Role[] = [
     start: "2023-02",
     end: "2024-06",
     summary:
-      "My most formative role — shipped 3 live products across fintech, sports, and crypto, reaching 7,000+ users and delivering measurable outcomes across all of them.",
+      "My most formative role: shipped 3 live products across fintech, sports, and crypto, reaching 7,000+ users and delivering measurable outcomes across all of them.",
     points: [
-      "Designed a live web and mobile payments, recharges & rent app — achieved an 18% bounce rate reduction and scaled to 7,000+ users.",
+      "Designed a live web and mobile payments, recharges & rent app, achieving an 18% bounce rate reduction and scaling to 7,000+ users.",
       "Spearheaded design of a sports slot booking app, improving booking efficiency by 25%.",
       "Built a crypto-based online raffle app with a seamless transaction UI that simplified complex flows for non-crypto-native users.",
       "Developed design systems to maintain UI consistency across all projects and partnered with developers for scalable, responsive implementation.",
@@ -106,7 +106,7 @@ export function formatRange(start: string, end?: string) {
     const [y, m] = s.split("-").map(Number);
     return new Date(y, m - 1).toLocaleString("en-US", { month: "short", year: "numeric" }).toUpperCase();
   };
-  return `${fmt(start)} — ${end ? fmt(end) : "PRESENT"}`;
+  return `${fmt(start)} – ${end ? fmt(end) : "PRESENT"}`;
 }
 
 export function formatDuration(start: string, end?: string, now = new Date()) {

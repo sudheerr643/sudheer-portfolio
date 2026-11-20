@@ -221,7 +221,7 @@ export function ExperienceRuler() {
         aria-valuemin={0}
         aria-valuemax={total}
         aria-valuenow={round1(v)}
-        aria-valuetext={`${v.toFixed(1)} years — ${role.title} at ${role.company}, ${year}`}
+        aria-valuetext={`${v.toFixed(1)} years: ${role.title} at ${role.company}, ${year}`}
         onPointerDown={onDown}
         onPointerMove={onMove}
         onPointerUp={onUp}

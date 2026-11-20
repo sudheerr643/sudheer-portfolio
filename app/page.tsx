@@ -115,7 +115,7 @@ export default function Home() {
               status="Concept"
               tone="blue"
               title="Split Pay for group bookings"
-              subtitle="Book together, pay separately — a feature concept for movie ticketing"
+              subtitle="Book together, pay separately. A feature concept for movie ticketing"
               media={<SplitPayMedia />}
             />
           </section>

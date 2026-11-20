@@ -12,12 +12,12 @@ import { CursorFollower } from "@/components/CursorFollower";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sudheer-design.vercel.app"),
-  title: "Sudheer — UI/UX & Product Designer",
+  title: "Sudheer | UI/UX & Product Designer",
   description:
     "Sudheer Reddy Kancharla is a UI/UX & Product Designer crafting intuitive web and mobile products across fintech, commerce, CRM and design systems.",
   icons: { icon: "/assets/logo.svg" },
   openGraph: {
-    title: "Sudheer — UI/UX & Product Designer",
+    title: "Sudheer | UI/UX & Product Designer",
     description: "I design experiences that convert.",
     images: ["/assets/payinstacard-poster.jpg"],
   },

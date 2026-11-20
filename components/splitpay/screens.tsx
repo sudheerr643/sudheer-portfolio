@@ -392,7 +392,7 @@ function SplitSetup({ go }: ScreenProps) {
           <div>
             <p className="text-[13px] font-medium">Seats held for 10 minutes</p>
             <p className="mt-0.5 text-[12px] leading-[1.45]" style={{ color: C.sub }}>
-              Friends pay from a link — no app needed. Miss the timer? You choose: cover the seat or release it.
+              Friends pay from a link, no app needed. Miss the timer? You choose: cover the seat or release it.
             </p>
           </div>
         </Card>
@@ -492,7 +492,7 @@ function GroupConfirmed({ go }: ScreenProps) {
         <div className="flex flex-col items-center pt-4 pb-5 text-center">
           <SuccessMark />
           <p className="mt-4 text-[20px] font-semibold">All 6 seats booked</p>
-          <p className="mt-1 text-[13px]" style={{ color: C.sub }}>Everyone paid for their own seat — nothing to collect.</p>
+          <p className="mt-1 text-[13px]" style={{ color: C.sub }}>Everyone paid for their own seat. Nothing to collect.</p>
         </div>
         <Card className="overflow-hidden">
           <div className="p-4"><ShowSummary /></div>
@@ -738,7 +738,7 @@ function HoldExpired({ go }: ScreenProps) {
         </Card>
         <Card className="p-4">
           <p className="text-[13px] font-medium">G10 and G11 are still free</p>
-          <p className="mt-0.5 text-[12px]" style={{ color: C.sub }}>Kabir and Zoya can still book them with the same link — no hold this time.</p>
+          <p className="mt-0.5 text-[12px]" style={{ color: C.sub }}>Kabir and Zoya can still book them with the same link, but without a hold this time.</p>
         </Card>
       </div>
       <BottomBar>
@@ -762,7 +762,7 @@ function PaymentFailed({ go, clock = 371 }: ScreenProps) {
         </span>
         <p className="mt-5 text-[20px] font-semibold">Payment didn&apos;t go through</p>
         <p className="mt-2 text-[13.5px] leading-[1.5]" style={{ color: C.sub }}>
-          Google Pay declined the payment. No money was taken — if it was, it&apos;ll be refunded within 48 hours.
+          Google Pay declined the payment. No money was taken. If it was, it&apos;ll be refunded within 48 hours.
         </p>
         <div className="mt-6 flex w-full items-center justify-between rounded-xl px-4 py-3" style={{ background: "#F7F7FA" }}>
           <span className="text-left text-[12.5px]" style={{ color: C.sub }}>Seat <b style={{ color: C.ink }}>{friend.seat}</b> is still held for you</span>
@@ -971,7 +971,7 @@ function LinkAfterHold({ go }: ScreenProps) {
           </span>
           <p className="mt-4 text-[20px] font-semibold">The hold on your seat ended</p>
           <p className="mt-2 text-[13.5px] leading-[1.5]" style={{ color: C.sub }}>
-            Arjun&apos;s group booked 4 seats at 4:12 PM. Seat {kabir.seat} wasn&apos;t paid for in time, so it was released — nobody was charged.
+            Arjun&apos;s group booked 4 seats at 4:12 PM. Seat {kabir.seat} wasn&apos;t paid for in time, so it was released. Nobody was charged.
           </p>
         </div>
 
@@ -994,7 +994,7 @@ function LinkAfterHold({ go }: ScreenProps) {
         <p className="mt-2 text-[12px]" style={{ color: C.sub }}>G6–G9 are your friends · G11 has been taken</p>
 
         <div className="mt-5 rounded-xl p-4" style={{ background: "#F2FBF4", boxShadow: `inset 0 0 0 1px #CDEBD4` }}>
-          <p className="text-[14px] font-medium" style={{ color: "#146C2E" }}>Good news — {kabir.seat} is still free</p>
+          <p className="text-[14px] font-medium" style={{ color: "#146C2E" }}>Good news: {kabir.seat} is still free</p>
           <p className="mt-0.5 text-[12.5px] leading-[1.45]" style={{ color: "#2F6B40" }}>Right next to your friends. It&apos;s no longer held for you, so book it before someone else does.</p>
         </div>
       </div>

@@ -7,9 +7,9 @@ import { CopyEmail, ThemeToggle } from "@/components/widgets";
 import { profile } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Payinstacard — Rental Payments Experience Revamp · Sudheer",
+  title: "Payinstacard: Rental Payments Experience Revamp · Sudheer",
   description:
-    "Redesigning Payinstacard's end-to-end mobile rent payment flow into a guided, high-trust transaction journey — cutting desktop dependency from 70% to 45%.",
+    "Redesigning Payinstacard's end-to-end mobile rent payment flow into a guided, high-trust transaction journey, cutting desktop dependency from 70% to 45%.",
 };
 
 function Card({ children, className = "", dark = false }: { children: ReactNode; className?: string; dark?: boolean }) {
@@ -120,7 +120,7 @@ export default function Payinstacard() {
             <Eyebrow>Context</Eyebrow>
             <h3 className="mt-2 text-lg font-semibold tracking-tight">What is Payinstacard?</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              A digital payments platform that enables users to pay rent, utilities, credit cards, and more — all in one accessible place.
+              A digital payments platform that enables users to pay rent, utilities, credit cards, and more, all in one accessible place.
             </p>
           </Card>
           <Card>
@@ -150,7 +150,7 @@ export default function Payinstacard() {
               A significant number of users were not completing transactions on mobile, despite high intent to pay.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-muted">
-              Users were switching to desktop or abandoning flows midway — not due to a lack of features, but due to friction in the experience. The
+              Users were switching to desktop or abandoning flows midway, not due to a lack of features, but due to friction in the experience. The
               flow introduced friction in moments where users needed clarity, confidence, and control.
             </p>
           </Card>
@@ -213,16 +213,16 @@ export default function Payinstacard() {
           </div>
         </section>
 
-        <Story n="01" title="Simplifying entry into the flow" quote="Users don't think in steps — they think in goals." />
-        <Figure src="/assets/payinstacard/story-1.png" alt="Story 01 — simplifying entry into the flow" w={11140} h={4977} />
+        <Story n="01" title="Simplifying entry into the flow" quote="Users don't think in steps. They think in goals." />
+        <Figure src="/assets/payinstacard/story-1.png" alt="Story 01: simplifying entry into the flow" w={11140} h={4977} />
         <p className="px-1 pt-6 text-[11px] font-semibold tracking-[0.14em] text-muted uppercase">Evolution of the design · Iterations & refinement</p>
         <Figure src="/assets/payinstacard/payment-iterations.png" alt="Payment flow iterations" w={6440} h={4952} />
 
         <Story n="02" title="Reducing effort & improving clarity" quote="Users don't want repetition or surprises when money is involved." />
-        <Figure src="/assets/payinstacard/story-2.png" alt="Story 02 — reducing effort and improving clarity" w={10800} h={4684} />
+        <Figure src="/assets/payinstacard/story-2.png" alt="Story 02: reducing effort and improving clarity" w={10800} h={4684} />
 
-        <Story n="03" title="Enhancing the post-payment experience" quote="After completing a payment, users want closure — not more decisions." />
-        <Figure src="/assets/payinstacard/story-3.png" alt="Story 03 — enhancing the post-payment experience" w={10800} h={4684} />
+        <Story n="03" title="Enhancing the post-payment experience" quote="After completing a payment, users want closure, not more decisions." />
+        <Figure src="/assets/payinstacard/story-3.png" alt="Story 03: enhancing the post-payment experience" w={10800} h={4684} />
         <p className="px-1 pt-6 text-[11px] font-semibold tracking-[0.14em] text-muted uppercase">Evolution of the design · Success flow iterations</p>
         <Figure src="/assets/payinstacard/success-iterations.png" alt="Success screen iterations" w={6440} h={4952} />
 
@@ -263,7 +263,7 @@ export default function Payinstacard() {
         </div>
         <section className="grid gap-4 md:grid-cols-3">
           {[
-            ["Clarity > complexity", "Users don't need more options — they need fewer, clearer ones. Removing ambiguity was the single most effective change."],
+            ["Clarity > complexity", "Users don't need more options. They need fewer, clearer ones. Removing ambiguity was the single most effective change."],
             ["Reduce steps, not add features", "Every step removed was more impactful than any feature added. Simplification beat functionality every time."],
             ["Trust comes from transparency", "Showing the total upfront and confirming details before payment built the confidence users needed to complete transactions."],
           ].map(([h, p], i) => (
