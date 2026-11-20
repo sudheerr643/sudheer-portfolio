@@ -21,7 +21,7 @@ export const profile = {
   stats: [
     { value: "3+", label: "Years designing" },
     { value: "6+", label: "Products shipped" },
-    { value: "7K+", label: "Users reached" },
+    { value: "100K+", label: "Users reached" },
   ],
 };
 
@@ -69,9 +69,9 @@ export const experience: Role[] = [
     start: "2023-02",
     end: "2024-06",
     summary:
-      "My most formative role: shipped 3 live products across fintech, sports, and crypto, reaching 7,000+ users and delivering measurable outcomes across all of them.",
+      "My most formative role: shipped 3 live products across fintech, sports, and crypto, reaching 100K+ users and delivering measurable outcomes across all of them.",
     points: [
-      "Designed a live web and mobile payments, recharges & rent app, achieving an 18% bounce rate reduction and scaling to 7,000+ users.",
+      "Designed a live web and mobile payments, recharges & rent app, achieving an 18% bounce rate reduction and scaling to 100K+ users.",
       "Spearheaded design of a sports slot booking app, improving booking efficiency by 25%.",
       "Built a crypto-based online raffle app with a seamless transaction UI that simplified complex flows for non-crypto-native users.",
       "Developed design systems to maintain UI consistency across all projects and partnered with developers for scalable, responsive implementation.",
