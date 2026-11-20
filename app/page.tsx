@@ -114,8 +114,8 @@ export default function Home() {
               href="/split-pay"
               status="Concept"
               tone="blue"
-              title="Split Pay for group bookings"
-              subtitle="Book together, pay separately. A feature concept for movie ticketing"
+              title="Split Pay: a BookMyShow feature"
+              subtitle="Book together, pay separately. A group booking concept"
               media={<SplitPayMedia />}
             />
           </section>

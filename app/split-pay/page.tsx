@@ -10,9 +10,9 @@ import { CopyEmail, ThemeToggle } from "@/components/widgets";
 import { profile } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Split Pay: group movie bookings · Sudheer",
+  title: "Split Pay: a BookMyShow feature · Sudheer",
   description:
-    "A product design concept: let a group lock seats together and each friend pay for their own seat from a link, with no chasing money afterwards. Unofficial concept for BookMyShow.",
+    "Split Pay, a feature concept for BookMyShow: a group locks seats together and each friend pays for their own seat from a link, with no chasing money afterwards. Unofficial concept.",
 };
 
 /* ---------- small building blocks ---------- */
@@ -186,11 +186,12 @@ export default function SplitPayCaseStudy() {
               </div>
               <h1 className="mt-6 text-[clamp(2.3rem,4.6vw,3.6rem)] leading-[1.04] font-semibold tracking-[-0.04em]">
                 Split Pay
-                <br />
-                <span className="text-muted">Book together. Pay separately.</span>
+                <span className="mt-2 block text-[0.5em] leading-tight tracking-[-0.025em] text-muted">
+                  A <span className="text-[#F84464]">BookMyShow</span> feature
+                </span>
               </h1>
               <p className="mt-5 max-w-md text-[16px] leading-relaxed text-muted">
-                A feature concept for a movie-ticketing app: the group locks seats together and every friend pays for their own seat from a link, so nobody fronts the full amount or chases money afterwards.
+                <b className="text-ink">Book together. Pay separately.</b> The group locks seats together and every friend pays for their own seat from a link, so nobody fronts the full amount or chases money afterwards.
               </p>
               <p className="mt-6 inline-flex items-center gap-2 rounded-full bg-chip px-3 py-1.5 text-[12px] text-muted">
                 <span className="size-1.5 rounded-full bg-[#F84464]" /> Unofficial concept for BookMyShow · not affiliated
